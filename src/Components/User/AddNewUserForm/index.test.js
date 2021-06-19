@@ -255,8 +255,6 @@ describe('Component <AddNewUserForm />', () => {
                 expect(screen.getByText('Add new user successfully')).toBeInTheDocument()
             });
 
-            
-
         })
 
     })
@@ -445,7 +443,7 @@ describe('Component <AddNewUserForm />', () => {
 
         beforeEach(() => {
             global.fetch = jest.fn().mockImplementation(() => {
-              return Promise.reject(new Response(JSON.stringify(null)));
+                return Promise.reject(new Response(JSON.stringify(null)));
             });
         });
 
